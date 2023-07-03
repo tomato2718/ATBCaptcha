@@ -70,7 +70,7 @@ def arg_parser() -> argparse.ArgumentParser:
         dest='color',
         choices=['default'],
         type=str,
-        help='Color of the captcha, currently only dafault in supported.',
+        help='Color of the captcha, currently only default in supported.',
         default='default',
     )
 
