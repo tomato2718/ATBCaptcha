@@ -3,7 +3,7 @@
 ### Features and enhancements
 - **Chore:** Renamed etc folder into font. [@tomato2718]
 - **Feat:** Main module updated. [@tomato2718]
-- **Docs:** `README.md` and `CHANGELOG.md` updated.
+- **Docs:** `README.md` and `CHANGELOG.md` updated. [@tomato2718]
 
 ### Bug fixes
 - **Fix:** typo fixed. [@tomato2718]
