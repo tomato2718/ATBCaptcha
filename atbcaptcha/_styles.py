@@ -17,7 +17,7 @@ class FontMeta(type):
     def __getattribute__(self, __name: str) -> Any:
         res = object.__getattribute__(self, __name)
         if isinstance(res, str):
-            res = path.join(path.dirname(__file__), 'etc', res)
+            res = path.join(path.dirname(__file__), 'font', res)
         return res
     
 class Font(metaclass=FontMeta):

@@ -1,6 +1,7 @@
 from logging import getLogger
 
-from . import ATBCaptcha, Font
+from . import ATBCaptcha, Font, Color
+from ._argparser import arg_parser
 
 logger = getLogger('atbcaptcha')
 logger.setLevel('INFO')
@@ -9,13 +10,18 @@ if __debug__:
     logger.setLevel('DEBUG')
     logger.debug('Running under DEBUG mode.')
 
-# TODO: Create arg parser.
+def main():
+    args = arg_parser().parse_args()
+    img = ATBCaptcha(
+        text=args.text, 
+        font=args.font if args.font else Font.HACK_NERD_FONT,
+        size=args.size,
+    )
+    img.generate(
+        fps=args.fps,
+        color=getattr(Color, args.color.upper()),
+    )
+    img.save(args.output)
 
 if __name__ == '__main__':
-    img = ATBCaptcha(
-        text='POTATO', 
-        font=Font.HACK_NERD_FONT,
-        size=72,
-    )
-    img.generate(30)
-    img.save('./test.gif')
+    main()

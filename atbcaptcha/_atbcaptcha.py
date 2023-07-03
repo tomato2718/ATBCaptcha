@@ -40,18 +40,20 @@ class ATBCaptcha:
         :param int size: Size of the text.
         '''
         x, y = int(size)*len(text), int(size)
-        self._base_frame = Image.new(mode='RGB',
-                                     size=(x, y),
-                                     color='white'
-                                    )
+        self._base_frame = Image.new(
+            mode='RGB',
+            size=(x, y),
+            color='white'
+        )
         font = self._load_font(font, size)
         draw = ImageDraw.Draw(self._base_frame)
-        draw.text(xy=(x//2, y//2),
-                  text=text,
-                  fill=(0, 0, 0),
-                  font=font,
-                  anchor='mm'
-                  )
+        draw.text(
+            xy=(x//2, y//2),
+            text=text,
+            fill=(0, 0, 0),
+            font=font,
+            anchor='mm'
+        )
             
     @property
     def base_frame(self) -> Image.Image:
@@ -80,7 +82,19 @@ class ATBCaptcha:
         '''
         Generate the Animeted Text-Based Captcha.
 
+        Data structure of `color` MUST be like follows::
+
+            [
+                (0, 0, 0),
+                (50, 50, 50),
+                (100, 100, 100),
+                (150, 150, 150),
+                (200, 200, 200),
+                (252, 252, 252)
+            ]
+
         :param int fps: The frames per second of the captcha, `MUST` be 15 or 30.
+        :param list[tuple[int, int, int]] color: A list of tuples use to generate the captcha.
         :return: None.
         :raise ValueError: When input fps isn't 15 or 30.
         '''
