@@ -46,8 +46,8 @@ img.save(args.output)
 ```sh
 >>> python -m atbcaptcha -h
 >>> python -m atbcaptcha foo -o ./output.gif
->>> python -m atbcaptcha bar -o ./test.gif --size 72
->>> python -m atbcaptcha foobar -o ./test.gif --size 72 --fps 30   
+>>> python -m atbcaptcha bar -o ./output.gif --size 72
+>>> python -m atbcaptcha foobar -o ./output.gif --size 72 --fps 30   
 ```
 
 - Use Docker to execute this project.
