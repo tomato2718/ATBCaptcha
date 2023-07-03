@@ -1,10 +1,18 @@
 # Change Log
-## v0.0.0 (1900/01/01)
+## v0.3.0 (2023/07/03)
 ### Features and enhancements
-- **項目:** 概要。[@tomato2718]
+- **Chore:** Renamed etc folder into font. [@tomato2718]
+- **Feat:** Main module updated. [@tomato2718]
+- **Docs:** `README.md` and `CHANGELOG.md` updated.
 
 ### Bug fixes
-- **項目:** 概要。[@tomato2718]
+- **Fix:** typo fixed. [@tomato2718]
+
+## v0.0.0 (1900/01/01)
+### Features and enhancements
+
+### Bug fixes
+
 
 
 <!-- 資訊區塊 -->
