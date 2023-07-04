@@ -1,11 +1,15 @@
 # Animated Text-Based Captcha
 ## Summary
-> **Currently under development**
+> **Still under development!**
 
+![example]
+
+Animated Text-Based Captcha let you create the captchas just like the one shown above.
+
+> **Important:** This is NOT a real captcha, as there's no any evidence can prove the effectiveness of this project.
 
 ## Requirements
 ### System
-- `docker >= 23.0`
 - `python >= 3.10.10`
 
 ### Python
@@ -13,9 +17,16 @@
 
 ## Setup
 ### Installation
-- TBA.
+- Install with Python pip
 ```sh
->>> 
+>>> pip install ATBCaptcha-0.3.0.dev0-py3-none-any.whl
+```
+
+- Build Docker Image
+```sh
+>>> mkdir tmp
+>>> pip install ATBCaptcha-0.3.0.dev0-py3-none-any.whl -t tmp
+>>> docker build -t atbcaptcha:0.3.0-dev tmp/atbcaptcha
 ```
 
 ## Usage
@@ -52,22 +63,23 @@ img.save(args.output)
 
 - Use Docker to execute this project.
 ```sh
->>> TBA.
+# Run the app
+>>> docker run -it --rm -v "`pwd`:/usr/src//output" atbcaptcha:0.3.0-dev bar -o ./output/test.gif --size 72
 ```
 
 ### Arguments
 #### Requirement 
 - `text`: The text to display on captcha.
-- `--output`: The path of where the captcha to be save.
+- `--output`: The path of where the captcha to be saved.
 
 #### Optional
-- `--font`: Path of a TrueType font, HackNerdFont will be use as default if not specified.
+- `--font`: Path of a `TrueType` font, `HackNerdFont` will be use as default if not specified.
 - `--size`: Size of the font, in pixels. (Default = 12)
 - `--color`: Color of the captcha, currently only default in supported.
 -  `--fps`: The fps of captcha. (Default = 15)
 
 ## Run the tests
-- TBA.
+- Unit tests
 ```sh
 >>> python -m tests
 ```
@@ -77,3 +89,7 @@ img.save(args.output)
 - `yveschen2718@gmail.com`
 ### Maintainer
 - `yveschen2718@gmail.com`
+
+<!--links-->
+
+[example]: ./docs/ATBCaptcha.gif

@@ -42,7 +42,7 @@ def arg_parser() -> argparse.ArgumentParser:
         dest='output',
         action='store',
         type=str,
-        help='The path of where the captcha to be save.',
+        help='The path of where the captcha to be saved.',
         required=True
     )
     
