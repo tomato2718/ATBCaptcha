@@ -69,7 +69,7 @@ img.save(args.output)
 ### Arguments
 #### Requirement 
 - `text`: The text to display on captcha.
-- `--output`: The path of where the captcha to be save.
+- `--output`: The path of where the captcha to be saved.
 
 #### Optional
 - `--font`: Path of a `TrueType` font, `HackNerdFont` will be use as default if not specified.

@@ -122,7 +122,7 @@ class ATBCaptcha:
         '''
         Output the file.
 
-        :param str path: The path of where the captcha will be save.
+        :param str path: The path of where the captcha will be saved.
         '''
         duration = {
             15: 66.7,
