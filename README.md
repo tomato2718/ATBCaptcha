@@ -3,6 +3,7 @@
 > **Still under development!**
 
 ![example]
+
 Animated Text-Based Captcha let you create the captchas just like the one shown above.
 
 > **Important:** This is NOT a real captcha, as there's no any evidence can prove the effectiveness of this project.
