@@ -13,4 +13,4 @@
 *.egg-info
 
 # project
-**/*.gif
+./*.gif
