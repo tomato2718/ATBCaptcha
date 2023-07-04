@@ -34,7 +34,7 @@ Animated Text-Based Captcha let you create the captchas just like the one shown 
 - Import this Project as a module.
 ```py
 '''
-For more informations, see `docs/`.
+For more information, see `docs/`.
 '''
 from atbcaptcha import ATBCaptcha, Font, Color
 
@@ -50,7 +50,7 @@ img.generate(
     color=Color.DEFAULT,
 )
 # Output the captcha
-img.save(args.output)
+img.save('./output.gif')
 ```
 
 - Use Python to execute this project.
@@ -63,8 +63,7 @@ img.save(args.output)
 
 - Use Docker to execute this project.
 ```sh
-# Run the app
->>> docker run -it --rm -v "`pwd`:/usr/src//output" atbcaptcha:0.3.0-dev bar -o ./output/test.gif --size 72
+>>> docker run -it --rm -v "`pwd`:/usr/src/output" atbcaptcha:0.3.0-dev bar -o ./output/test.gif --size 72
 ```
 
 ### Arguments
