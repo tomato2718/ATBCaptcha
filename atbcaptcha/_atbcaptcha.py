@@ -90,7 +90,7 @@ class ATBCaptcha:
                 (100, 100, 100),
                 (150, 150, 150),
                 (200, 200, 200),
-                (252, 252, 252)
+                (252, 252, 252),
             ]
 
         :param int fps: The frames per second of the captcha, `MUST` be 15 or 30.
