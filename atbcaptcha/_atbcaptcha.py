@@ -4,7 +4,6 @@ Not for import.
 
 __all__ = ['ATBCaptcha']
 
-from logging import getLogger
 from typing import Literal
 
 from PIL import (Image,
@@ -15,8 +14,6 @@ from PIL import (Image,
 from ._styles import Color
 from ._utils import random_pixels
 
-# TODO: Implement the logger
-
 class ATBCaptcha:
     '''
     The class to create Animated Text-Based Captcha.
@@ -25,7 +22,6 @@ class ATBCaptcha:
     _fps: Literal[15, 30]
     _color: list[tuple[int, int, int]]
     _image_frames: list[Image.Image] = []
-    _logger = getLogger('atbcaptcha')
 
     def __init__(self,
                  text: str,
