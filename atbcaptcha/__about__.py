@@ -13,7 +13,7 @@ __all__ = [
 ]
 
 __project__ = 'ATBCaptcha'
-__version__ = '0.3.1-dev'
+__version__ = '1.0.0'
 __author__ = 'yveschen2718@gmail.com'
 __maintainer__ = 'yveschen2718@gmail.com'
 __release__ = '2023/07/05'
