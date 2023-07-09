@@ -1,7 +1,7 @@
-lib
-===
+atbcaptcha
+==========
 
 .. toctree::
    :maxdepth: 4
 
-   lib
+   atbcaptcha

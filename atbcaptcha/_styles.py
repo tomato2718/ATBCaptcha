@@ -16,7 +16,7 @@ class FontMeta(type):
     '''
     def __getattribute__(self, __name: str) -> Any:
         res = object.__getattribute__(self, __name)
-        if isinstance(res, str):
+        if isinstance(res, str) and __name.isupper():
             res = path.join(path.dirname(__file__), 'font', res)
         return res
     
@@ -38,5 +38,5 @@ class Color:
         (100, 100, 100),
         (150, 150, 150),
         (200, 200, 200),
-        (252, 252, 252)
+        (252, 252, 252),
     ]

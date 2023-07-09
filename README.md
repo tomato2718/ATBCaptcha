@@ -1,6 +1,5 @@
 # Animated Text-Based Captcha
 ## Summary
-> **Still under development!**
 
 ![example]
 

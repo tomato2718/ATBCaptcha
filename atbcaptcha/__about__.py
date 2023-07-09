@@ -13,10 +13,10 @@ __all__ = [
 ]
 
 __project__ = 'ATBCaptcha'
-__version__ = '0.3.0-dev'
+__version__ = '1.0.0'
 __author__ = 'yveschen2718@gmail.com'
 __maintainer__ = 'yveschen2718@gmail.com'
-__release__ = '2023/07/03'
+__release__ = '2023/07/05'
 __summary__ = 'Animated Text-Based Captcha'
 __usage__ = f'''
 Usage:

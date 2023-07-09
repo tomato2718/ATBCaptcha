@@ -22,7 +22,7 @@ def random_pixels(style: list[tuple[int, int, int]],
                 (100, 100, 100),
                 (150, 150, 150),
                 (200, 200, 200),
-                (252, 252, 252)
+                (252, 252, 252),
             ]
         >>> random_pixels(
                 style=color,
