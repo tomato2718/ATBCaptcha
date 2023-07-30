@@ -24,5 +24,5 @@
 
 
 
-<!-- 資訊區塊 -->
+<!-- Links -->
 [@tomato2718]: yveschen2718@gmail.com
